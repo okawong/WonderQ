@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Producer Dashboard</title>
+  <!-- Compiled and minified CSS -->
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+</head>
+<body>
+
+  <h5>Create a new message:</h5>
+  <form id="messageForm" action="/messages" method="POST">
+    <input type="text" name="message" placeholder="Your Message" required><br/>
+    <button type="submit">Submit</button><br/>
+  </form>
+  <br/>
+  <h5>Messages</h5>
+  <table class="bordered highlight">
+    <thead>
+      <tr>
+        <th>Creation Date</th>
+        <th>Message</th>
+        <th>State</th>
+        <th>Checkout Time</th>
+        <th>ID</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{#each messages}}
+      <tr>
+        <td>{{creation_date}}</td>
+        <td>{{message}}</td>
+        <td>{{state}}</td>
+        <td>{{checkout_time}}</td>
+        <td>{{id}}</td>
+      </tr>
+      {{/each}}
+    </tbody>
+  </table>
+</body>
+</html>

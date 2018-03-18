@@ -1,0 +1,28 @@
+{
+  "name": "wonderq",
+  "version": "1.0.0",
+  "description": "A Wonderful Queuing Webapp",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "firebase": "^4.11.0",
+    "firebase-admin": "^5.11.0",
+    "jquery": "^3.3.1",
+    "materialize-css": "^0.100.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/okawong/WonderQ.git"
+  },
+  "author": "Parker Oka-Wong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/okawong/WonderQ/issues"
+  },
+  "homepage": "https://github.com/okawong/WonderQ#readme"
+}
