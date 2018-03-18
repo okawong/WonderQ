@@ -1,6 +1,11 @@
 # WonderQ
 A Wonderful Queuing Webapp
 
+in command line or terminal run:
+node server.js
+
+navigate to: localhost:8000/consumer
+
 =========Notes for OSX and Windows Config============
 	-if using OSX:
     -change line 7 in:
