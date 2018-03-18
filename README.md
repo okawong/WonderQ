@@ -3,7 +3,11 @@ A Wonderful Queuing Webapp
 
 =========Notes for OSX and Windows Config============
 	-if using OSX:
-    -change line 7 in ../consumer/views/view.hbs and ../producer/views/view.hbs
+    -change line 7 in:
+     ../consumer/views/view.hbs  
+     ../producer/views/view.hbs
+     ../dev/views/view.hbs
+
      **Original:**
 
      res.render(__dirname+'\\views\\view', {messages:db.messages});
