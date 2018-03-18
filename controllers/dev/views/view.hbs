@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Consumer Dashboard</title>
+  <title>Developer Dashboard</title>
   <!-- Compiled and minified CSS -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css"/>
-  <!-- Compiled and minified JavaScript -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
 </head>
 <body>
   <nav>
@@ -20,21 +20,9 @@
       </ul>
     </div>
   </nav>
-  <div class="content-panel">
-      <h5>Check out a Message:</h5>
-      <form class = "submissionForm" id="messageForm" action="/api/checkout" method="POST">
-        <input type="text" name="id" placeholder="message id" required><br/>
-        <button type="submit">Checkout</button><br/>
-      </form>
-      <h5>Check in a Message:</h5>
-      <form class = "submissionForm" id="messageForm" action="/api/checkin" method="POST">
-        <input type="text" name="id" placeholder="message id" required><br/>
-        <button type="submit">Checkin</button><br/>
-      </form>
-
-    <br/>
-    <h5>Messages</h5>
-    <table class="highlight bordered">
+  <div class = "content-panel">
+    <h5>All Messages</h5>
+    <table class="bordered highlight">
       <thead>
         <tr>
           <th>Creation Date</th>

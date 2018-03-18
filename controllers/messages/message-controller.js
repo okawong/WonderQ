@@ -20,9 +20,11 @@ exports.getMessages = function(req, res){
   var results = db;
   if(req.query.state != null)
     results = getfilteredMessages(req.query.state);
+  res.status(200);
   res.json(results);
 }
 exports.getAvailableMessages = function(req, res){
+  res.status(200);  
   res.json(getfilteredMessages(AVAILABLE_STATE));
 }
 
@@ -32,12 +34,14 @@ exports.createMessage = function(req, res){
   var message = req.body.message;
   createMessage(id, message, creationTime);
   eventEmitter.emit('createMessage');
+  res.status(200);
   res.redirect('/producer');
 }
 
 exports.deleteMessage = function(req, res){
   var id = req.body.id;
   delete db.id;
+  res.status(200);
   res.redirect("/consumer");
 }
 
@@ -48,6 +52,7 @@ exports.checkoutMessage = function(req, res){
   var id = req.body.id;
   checkoutMessage(id, checkoutTime);
   eventEmitter.emit('checkout');
+  res.status(200);
   res.redirect("/consumer");
 }
 
