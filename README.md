@@ -13,13 +13,13 @@ navigate to: localhost:8000/consumer
      ../producer/views/view.hbs
      ../dev/views/view.hbs
 
-     **Original:**
+   **Original**
 
-     res.render(__dirname+'\\views\\view', {messages:db.messages});
+     res.render(__dirname+'\\views\\view',...
 
    **Edited**
 
-     res.render(__dirname+'/views/view', {message:db.messages});
+     res.render(__dirname+'/views/view', ...
 
 WonderQ is a lightweight webapp that models the behavior of Amazon's Simple Queueing System.
 
