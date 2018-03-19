@@ -9,6 +9,7 @@ navigate to: localhost:8000/consumer
 =========Notes for OSX and Windows Config============
 	-if using OSX:
     -change line 7 in:
+    
      ../consumer/views/view.hbs  
      ../producer/views/view.hbs
      ../dev/views/view.hbs
