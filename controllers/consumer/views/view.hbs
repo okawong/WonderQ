@@ -33,7 +33,7 @@
       </form>
 
     <br/>
-    <h5>Messages</h5>
+    <h5>Available Messages</h5>
     <table class="highlight bordered">
       <thead>
         <tr>
@@ -46,6 +46,30 @@
       </thead>
       <tbody>
         {{#each messages}}
+        <tr>
+          <td>{{creation_date}}</td>
+          <td>{{message}}</td>
+          <td>{{state}}</td>
+          <td>{{checkout_time}}</td>
+          <td>{{id}}</td>
+        </tr>
+        {{/each}}
+      </tbody>
+    </table>
+    <br/>
+    <h5>Checkedout Messages</h5>
+    <table class="highlight bordered">
+      <thead>
+        <tr>
+          <th>Creation Date</th>
+          <th>Message</th>
+          <th>State</th>
+          <th>Checkout Time</th>
+          <th>ID</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{#each checkedoutMessages}}
         <tr>
           <td>{{creation_date}}</td>
           <td>{{message}}</td>
